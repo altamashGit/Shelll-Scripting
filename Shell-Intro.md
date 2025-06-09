@@ -85,13 +85,18 @@ Just play around with them and see how the shell responds.
 
 #  4. Standard Input, Output, and Error (stdin, stdout, stderr)
    . stdin (Standard Input) – where the program receives input (usually from the keyboard).
-      [image]
+   
+   ![Image](https://github.com/user-attachments/assets/dca0efd7-2719-4e65-8236-d055d7079961)
+   
    . stdout (Standard Output) – where the program sends regular output (usually to the screen).
-     [image]
-   . stderr (Standard error) – where a program prints errors (also usually the terminal).
-     [image]
+   
+   ![Image](https://github.com/user-attachments/assets/f0c7bad5-3c0e-4dee-9e41-7808b01ffe03)
 
-  # 5. 
+   . stderr (Standard error) – where a program prints errors (also usually the terminal).
+   ![Image](https://github.com/user-attachments/assets/4122dcb2-3d94-4c26-b48e-1b6a7d36bb25)
+  
+
+  # 5. Types of Shells]
   “Different shells offer different features, scripting syntax, and performance optimizations.
    Think of them like different text editors or programming languages — they do similar things in different ways.”
 
@@ -136,7 +141,8 @@ Always Remember that ,This is always the very first line of a Bash script.
 echo "Hello, world!"
 echo "You're running your first shell script 🚀"
  ```
- [imag]
+![Image](https://github.com/user-attachments/assets/275c3291-455c-48fd-b317-49ae80806784)
+
 Then in your keyboard press ctrl+x write a name "script.sh" hit enter to save, then ctrl+x for exit.
 
 #  8. How to Run a Shell Script
@@ -155,7 +161,8 @@ To Run this script type this command into your terminal
 ```
 ./script.sh
 ```
-[image]
+![Image](https://github.com/user-attachments/assets/fd7dda2e-77ec-4874-8921-3cbcb49ab2f1)
+
 # 9. Why Use Shell Scripts?
 
   1.  Automation – Run multiple commands or tasks with a single script.
