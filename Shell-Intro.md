@@ -35,7 +35,7 @@ Let's understand with the Analogy.......
 and the waiter passes your request to the kitchen (the OS). 
 Then the waiter brings back the result (the output).”
 
-<Images>
+![Image](https://github.com/user-attachments/assets/547775b8-0afb-4009-a1b0-0a9af2a9ffff)
 
 User: You, the person making a request.
 
@@ -47,7 +47,7 @@ Output (result): The food that comes back — the result you see on the screen.
 
   **Diagram idea**
 
-    [Images]
+  ![Image](https://github.com/user-attachments/assets/9823f52b-1e08-4595-82d3-926ab5a3a7ac)
 
 [User] → [Shell] → [Kernel] → [Hardware]
 
@@ -102,9 +102,13 @@ Just play around with them and see how the shell responds.
 
    examples--:
   •	Bash (Bourne Again Shell) – Most common shell in Linux systems today sh (Bourne Shell)
+  
   •	Zsh macOS-- Modern and highly customizable, popular on macOS.
+  
   •	Ksh(Korn Shell)-- Fast and script-friendly, used in enterprise Unix systems.
+  
   •	csh-- Less favored for scripting because of it uses C progamming syntex.
+  
   To Check which Interpreter or Shell do you have:---
    ```
    echo $0
