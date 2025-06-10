@@ -9,15 +9,15 @@ with a focus on **Bash scripting**. Whether you're new to the command line or lo
 
 
 ## Table of Contents
-1. [What is a Shell?]
-2. [Interacting with the CLI]
-3. [Basic Shell Commands]
-4. [Standard Input, Output, and Error (stdin, stdout, stderr)]
-5. [Types of Shells]
-6. [Shebang]
-7. [Writing a Shell Script]
-8. [How to Run a Shell Script]
-9. [Why Use Shell Scripts?]
+1. What is a Shell?
+2. Interacting with the CLI
+3. Basic Shell Commands
+4. Standard Input, Output, and Error (stdin, stdout, stderr)
+5. Types of Shells
+6. Shebang
+7. Writing a Shell Script
+8. How to Run a Shell Script
+9. Why Use Shell Scripts?
 
 # 1. What is the shell........?
 
