@@ -1,6 +1,6 @@
 # Shell Scripting Introduction
 
-Welcome to the ***Shell Scripting Introdution** repository...!!
+Welcome to the **Shell Scripting Introdution** repository...!!
 
 In this repo you are going to learn basic of the Linux Shell,with a Focus on Bash Scripting......!!
 
