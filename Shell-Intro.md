@@ -53,11 +53,11 @@ Output (result): The food that comes back — the result you see on the screen.
 
 
 #  2. Interacting with the CLI
-If you say Shell = Command Line Interpreter (CLI) then it would no be
-wrong.The shell reads the command you type. interperts it . and asks the operationg system
+If you say Shell = Command Line Interpreter (CLI) then it would not be
+wrong.The shell reads the command you type Interperts it . and asks the operationg system
 to execute it. 
-The Command Line Interface (CLI) is a text-based interface where you tyoe commnads.
-In Your LInux Just Click on the Terminal or in ubuntu you can press a short key
+The Command Line Interface (CLI) is a text-based interface where you type commnads.
+In Your Linux Just Click on the Terminal, or in ubuntu you can press a short key
 (alt+ctrl+t) to open a terminal.
 
 
@@ -96,11 +96,12 @@ Just play around with them and see how the shell responds.
    ![Image](https://github.com/user-attachments/assets/4122dcb2-3d94-4c26-b48e-1b6a7d36bb25)
   
 
-  # 5. Types of Shells]
+  # 5. Types of Shells
   “Different shells offer different features, scripting syntax, and performance optimizations.
    Think of them like different text editors or programming languages — they do similar things in different ways.”
 
    examples--:
+   
   •	Bash (Bourne Again Shell) – Most common shell in Linux systems today sh (Bourne Shell)
   
   •	Zsh macOS-- Modern and highly customizable, popular on macOS.
