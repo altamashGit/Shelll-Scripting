@@ -40,7 +40,7 @@ let's do some hands'on and see the command output and understand key component..
 ```
 ps
 ```
-(image1)
+![Image](https://github.com/user-attachments/assets/c1de5c05-b41d-4f58-a61d-c66f8da7717b)
 
 Here, PID shows the process ID of bash and ps command tty shows that which terminal or emulator i'm in in your case
 probabely it could be in pts/0.
@@ -49,9 +49,10 @@ probabely it could be in pts/0.
 ```
 ps aux
 ```
-(image2)
+![Image](https://github.com/user-attachments/assets/b82a35b3-3141-4773-be3d-226df0e76398)
 
 Here, some overview of flags aux 
+
 a → Shows processes from all users (not just the current user).
 
 u → Displays processes in a user-friendly format (with details like CPU%, MEM%, etc.).
@@ -83,7 +84,7 @@ This show that process with full details.
  ```
  This show running process without any extra details.
 
-  (image3)
+![Image](https://github.com/user-attachments/assets/562ca45b-f004-44b2-831d-b15d6a7d19c4)
 
  Both of these comaands filters and shows only processes related to specific process in our case here is ssh.
 
@@ -112,26 +113,27 @@ sleep 600 &
 ```
 make a note of number in the brackets,the second number is the pid of our sleep process.
 
-(image4)
+![Image](https://github.com/user-attachments/assets/d469a434-070d-4cfc-9e38-b25fc4562e4c)
 
 Now, let's use ps aux | grep sleep to confirm it's running and see its PID.
 ```
 ps aux | grep sleep
 ```
-(image5)
+![Image](https://github.com/user-attachments/assets/a0877143-1f8c-476f-9b86-6737ddc91a4e)
 
 Okay, Now we are going to stop this process using kill command followed by it's PID.
 
 ```
 kill <YOUR_SLEEP_PID>
 ```
-(image6)
+![Image](https://github.com/user-attachments/assets/ed961084-d0e8-4000-b827-0b2aa153b936)
+
 "Now, if you check ps aux | grep sleep again, it should be gone! We just 'killed' it gently.
 
 ```
 ps aux | grep sleep
 ```
-(image7)
+![Image](https://github.com/user-attachments/assets/f5361cfc-73e6-434b-97ad-a4be362de691)
 
 ## 3.  Background and Foreground Processes & Jobs
   - **Foreground Process**
@@ -159,7 +161,7 @@ ps aux | grep sleep
   It lists our background jobs.
   Notice that bracket [1]+ this is a job number.
 
-  (image8)
+![Image](https://github.com/user-attachments/assets/cd390771-72d2-4027-9419-8060e9b9541b)
 
    - What if you want to bring a background process back into the foreground,
    so it takes over your terminal again? for this task we'll use the fg command,
@@ -169,7 +171,7 @@ ps aux | grep sleep
    fg %1
    ```
 
-   (image9)
+![Image](https://github.com/user-attachments/assets/d950414f-3297-4492-8010-b7871386b35f)
 
    "Now our sleep command is back in the foreground. You can press Ctrl + C to stop it.
    and ctrl+z to pause and sent it to the background.
@@ -181,7 +183,8 @@ ps aux | grep sleep
    bg %1
    ```
    
-   (image10)
+  ![Image](https://github.com/user-attachments/assets/06811faa-9d71-4dff-b48c-cf515329783f)
+  
   look how stoped program send to the background running state.
 
 
@@ -204,11 +207,11 @@ The lower the nice value, the more priority the process it has.
 - How to manage 'Niceness'
  Go to terminal and type:
 ```
-nice -n 10 slep 300 &
+nice -n 10 sleep 300 &
 ```
 
-(image11)
- 
+![Image](https://github.com/user-attachments/assets/cb5edfbf-c273-4bcb-9e86-89811d52ba68)
+
  It will start in the background with a nice value of 10 (lower priority).
 
  renice – Change the Priority of a Running Process
@@ -216,7 +219,7 @@ nice -n 10 slep 300 &
 ```
 sudo renice -n 5 -p <PID>
 ```
-(image12)
+![Image](https://github.com/user-attachments/assets/b652e1a9-6bf9-4e2b-a3ea-40c708c8421c)
 
 ## Scheduling Tasks with cron (Cron Jobs)
 A cron job is a scheduled task listed in a crontab (cron table) file. These tasks run in the background.
@@ -240,9 +243,9 @@ I am using symbol ~ for creating my file into the home directory.
  
  ```
  echo 'echo "Hello from cron at $(date)" >> ~/cronlog.txt' > ~/hello.sh
-chmod +x ~/hello.sh
+chmod u+x ~/hello.sh
 ```
-(image13)
+![Image](https://github.com/user-attachments/assets/be80832e-e2d1-4e17-b7c6-5fb061ccc5d6)
 
  2. Add to crontab to run every 2 minutes
 
@@ -257,14 +260,13 @@ then add :-----
 ```
 ctrl+s and ctrl+x save and exit
 
-(image14)
+![Image](https://github.com/user-attachments/assets/718141e3-a1df-4fa5-9f6a-357a1123d927)
 
  3. After a few minutes, check the log:
 ```
 cat ~/cronlog.txt
 ```
-(image15)
-
+![Image](https://github.com/user-attachments/assets/9aa3b66a-337b-4ba4-b2ee-edf1247f4ff9)
 
 
  ## 🥳 Congratulations!
